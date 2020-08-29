@@ -76,7 +76,7 @@ To get type inference for the arguments passed to `setup()`, the use of [defineC
   }
   ```
 
-- **See also**: [Composition API `setup`](,,/guide/composition-api-setup.html)
+- **See also**: [Composition API `setup`](../guide/composition-api-setup.html)
 
 ## Lifecycle Hooks
 
@@ -102,7 +102,7 @@ const MyComponent = {
 
 These lifecycle hook registration functions can only be used synchronously during [`setup()`](#setup), since they rely on internal global state to locate the current active instance (the component instance whose `setup()` is being called right now). Calling them without a current active instance will result in an error.
 
-The component instance context is also set during the synchronous execution of lifecycle hooks, so watchers and computed properties created inside synchronously inside lifecycle hooks are also automatically tore down when the component unmounts.
+The component instance context is also set during the synchronous execution of lifecycle hooks. As a result, watchers and computed properties created synchronously inside of lifecycle hooks are also automatically tore down when the component unmounts.
 
 - **Mapping between Options API Lifecycle Options and Composition API**
 

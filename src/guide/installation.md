@@ -2,7 +2,7 @@
 
 ## Release Notes
 
-Latest beta version: 3.0.0-rc.1
+Latest beta version: 3.0.0-rc.5
 
 Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue-next/releases).
 
@@ -125,10 +125,11 @@ Global builds are not [UMD](https://github.com/umdjs/umd) builds. They are built
 
 ### For Server-Side Rendering
 
-- `vue.cjs(.prod).js`:
-  - For use in Node.js server-side rendering via `require()`.
-  - If you bundle your app with webpack with `target: 'node'` and properly externalize `vue`, this is the build that will be loaded.
-  - The dev/prod files are pre-built, but the appropriate file is automatically required based on `process.env.NODE_ENV`.
+#### `vue.cjs(.prod).js`:
+
+- For use in Node.js server-side rendering via `require()`.
+- If you bundle your app with webpack with `target: 'node'` and properly externalize `vue`, this is the build that will be loaded.
+- The dev/prod files are pre-built, but the appropriate file is automatically required based on `process.env.NODE_ENV`.
 
 ## Runtime + Compiler vs. Runtime-only
 
